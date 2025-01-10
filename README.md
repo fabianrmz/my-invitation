@@ -1,4 +1,3 @@
 # Invitation for my wedding 
-
-- Memory of my wedding 2025
+- Memory of 
 - Fist commited on Fri 10 Jan 2025
