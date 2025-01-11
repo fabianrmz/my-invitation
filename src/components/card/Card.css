@@ -122,6 +122,7 @@
     }
     .card-back {
         height: 45vh;
+        top: -17vh !important;
     }
     .initials {
         font-size: 8rem;
