@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Buongiorno;
+    src: url("../../media/Buongiorno\ Rastellino.otf") format("opentype");
+}
+@font-face {
+    font-family: 'CrimsonPro';
+    src: url("../../media/CrimsonPro-VariableFont_wght.ttf") format("opentype");
+}
+.initials {
+    font-family: 'Buongiorno';
+    font-size: 20rem;
+    margin: 0;
+}
+.card-border {
+    padding: 5rem 4rem;
+    width: 60vw;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.198);
+    border-radius: 2px;
+    /* background-color: rgb(242, 238, 229); */
+    background-image: url('../../media/paper.webp');
+    
+}
+.card-content {
+    text-align: right;
+    font-family: 'CrimsonPro';
+}
+
+.bold {
+    font-weight: 300;
+    font-size: 3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+    .initials {
+        font-size: 15rem;
+    }
+    .bold {
+        font-weight: 100;
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .card-border {
+        width: 70vw;
+    }
+    .bold {
+        font-size: 2rem;
+    }
+    .initials {
+        font-size: 9rem;
+    }
+}
+
