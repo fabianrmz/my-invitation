@@ -13,7 +13,7 @@ function Card( props ) {
         <p>CELEBRA CON NOSOTROS ESTE DIA ESPECIAL</p>
         <p className="bold">AMARIANY & FABIÁN</p>
         <p>Jueves 13 de Febrero 13:00hrs</p>
-        <p>📍 Av. Sta Margarita 4950... </p>
+        <p>📍 Av. Sta Margarita 4950</p>
       </div>
     </div> );
 
