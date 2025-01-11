@@ -1,10 +1,21 @@
-.Main-wrapper {
-  display: flex;
-  height: 100vh;
-  margin: 0;
+
+main {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
 }
+
+.flip-card {
+  perspective: 3200px;
+  margin: auto;
+  top: 10vh;
+}
+
+
 body {
   margin: 0;
-  background-repeat: repeat;
+
   background-color: rgb(244, 240, 230);
 }
+

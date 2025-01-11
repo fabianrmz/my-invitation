@@ -11,18 +11,51 @@
     font-size: 20rem;
     margin: 0;
 }
-.card-border {
+
+.buongiorno-font {
+    font-family: 'Buongiorno';
+    font-size: 10rem !important;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.card {
     padding: 5rem 4rem;
-    width: 60vw;
+    width: 50vw;
+    height: 40vh;
     margin: auto;
     background-color: white;
-    position: relative;
+    position: absolute;
     box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.198);
     border-radius: 2px;
-    /* background-color: rgb(242, 238, 229); */
     background-image: url('../../media/paper.webp');
-    
+    backface-visibility: hidden;
+    transition: transform 1s ease-in-out;
+    left: 25%;
 }
+
+.map {
+    width: 50vw;
+    height: 27.5vh;
+}
+
+.card-front {
+    transform: rotateX(0deg);
+}
+
+.card-back {
+    transform: rotateX(-180deg);
+    padding-top: 1rem;
+}
+
+.flip-card:hover .card-front {
+    transform: rotateX(180deg);
+}
+
+.flip-card:hover .card-back {
+    transform: rotateX(0deg);
+}
+
 .card-content {
     text-align: right;
     font-family: 'CrimsonPro';
@@ -35,9 +68,30 @@
 .bold {
     font-weight: 300;
     font-size: 3rem;
+    margin: 1rem;
 }
 
-@media only screen and (max-width: 1200px) {
+.card-front div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.card-front .title {
+    flex-grow: 1;
+    height: 100%;
+}
+
+.card-front .card-content {
+    flex-grow: 0;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .card {
+        width: 70vw;
+        left: 10%;
+    }
     .initials {
         font-size: 15rem;
     }
@@ -45,22 +99,64 @@
         font-weight: 100;
         font-size: 3rem;
     }
+    .map {
+        width: 70vw;
+    }
 }
 
-@media only screen and (max-width: 920px) {
-    .card-border {
-        width: 70vw;
-        padding: 1rem 1.5rem;
+@media only screen and (max-width: 720px) {
+    .card {
+        width: 80vw;
+        padding: 1rem 1.5rem 0 1rem;
+        left: 5%;
+        height: 40vh;
+        top: -10vh;
     }
     .bold {
         font-size: 1rem;
-        font-weight: 200;
+        font-weight: 600;
+
+    }
+    .card-front {
+        height: 30vh;
+    }
+    .card-back {
+        height: 45vh;
     }
     .initials {
-        font-size: 7rem;
+        font-size: 8rem;
     }
     .card-content {
         font-size: 0.6rem;
     }
+    .card-content p {
+        margin: 0.3rem;
+    }
+    main {
+        margin-top: 40vh;
+    }
+    .card-back .bold {
+        font-size: 6rem !important;
+        font-weight: lighter;
+        margin-bottom: 0;
+    }
+    .map {
+        width: 80vw;
+        height: 30vh;
+    }
 }
 
+
+@media only screen and (max-width: 429px) {
+    .card {
+        left: 4%;
+    }
+
+    .card-front {
+        height: 35vh;
+    }
+
+    .card-back {
+        height: 50vh;
+    }
+}
