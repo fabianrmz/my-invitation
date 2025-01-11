@@ -8,7 +8,7 @@ function Card() {
           <p>CELEBRA CON NOSOTROS ESTE DIA ESPECIAL</p>
           <p className="bold">AMARIANY & FABIÁN</p>
           <p>Jueves 13 de Febrero 13:00hrs</p>
-          <a href="geo:20.732775,-103.442099" target="_blank" rel="noreferrer">
+          <a href="https://maps.app.goo.gl/C3hQ9mKmg9wDn88Z6" target="_blank" rel="noreferrer">
             <p>Av. Sta Margarita 4950... </p>
           </a>
         </div>
