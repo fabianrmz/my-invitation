@@ -19,10 +19,11 @@
     margin-bottom: 1rem;
 }
 
+
+
 .card {
     padding: 2rem;
     width: 50vw;
-    height: 40vh;
     margin: auto;
     background-color: white;
     position: absolute;
@@ -159,6 +160,9 @@
     }
     .back-icon {
         top: -15rem !important;
+    }
+    .address {
+        font-size: 0.6rem;
     }
 }
 
