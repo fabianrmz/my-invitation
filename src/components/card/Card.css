@@ -154,6 +154,12 @@
         width: 80vw;
         height: 30vh;
     }
+    .back-icon img{
+        width: 3rem !important;
+    }
+    .back-icon {
+        top: -15rem !important;
+    }
 }
 
 
