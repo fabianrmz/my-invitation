@@ -4,6 +4,26 @@ main {
   align-items: center;
   justify-content: center;
   margin-top: 20vh;
+  text-align: center;
+}
+
+.back-icon img {
+  size: 1rem;
+  height: auto;
+  width: 5rem;
+  padding-bottom: 2rem;
+  opacity: 20%;
+}
+
+.back-icon {
+  display: none;
+  position: absolute;
+}
+
+.flip-card:hover .back-icon {
+  display: block !important;
+  left: calc(50vw - 2rem);
+  top: -10rem;
 }
 
 .flip-card {
