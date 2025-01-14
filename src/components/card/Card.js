@@ -10,8 +10,8 @@ function Card( props ) {
         <p className="initials">A &F</p>
       </div>
       <div className="card-content">
-        <p>CELEBRA CON NOSOTROS ESTE DIA ESPECIAL</p>
-        <p className="bold">AMARIANY & FABIÁN</p>
+        <p>CELEBRA CON NOSOTROS ESTE DÍA ESPECIAL</p>
+        <p className="bold">AMAIRANY & FABIÁN</p>
         <p>Jueves 13 de Febrero 16:00hrs</p>
         <p>📍 Av. Sta Margarita 4950</p>
       </div>
