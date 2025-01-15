@@ -1,19 +1,25 @@
 import './Card.css';
+import iconBack from '../../media/photo_us.png';
 
 function Card( props ) {
   const sideClass = `card ${ props.side }`;
   console.log(props.side)
 
   const frontSide = (
-    <div> 
+    <div className="card-wrapper"> 
       <div className="title">
         <p className="initials">A &F</p>
       </div>
-      <div className="card-content">
-        <p>CELEBRA CON NOSOTROS ESTE DÍA ESPECIAL</p>
-        <p className="bold">AMAIRANY & FABIÁN</p>
-        <p>Jueves 13 de Febrero 16:00hrs</p>
-        <p>📍 Av. Sta Margarita 4950</p>
+      <div className="content">
+        <div className='photo-container'>
+          <img src={ iconBack } alt="us photot" className="photo-us"></img>
+        </div>
+        <div className="card-content">
+          <p>CELEBRA CON NOSOTROS ESTE DÍA ESPECIAL</p>
+          <p className="bold">AMAIRANY & FABIÁN</p>
+          <p>Jueves 13 de Febrero 16:00hrs</p>
+          <p>📍 Av. Sta Margarita 4950</p>
+        </div>
       </div>
     </div> );
 

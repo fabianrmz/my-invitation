@@ -44,6 +44,7 @@
 
 .card-front {
     transform: rotateX(0deg);
+    padding-bottom: 0 !important;
 }
 
 .card-back {
@@ -75,7 +76,7 @@
     margin: 1rem;
 }
 
-.card-front div {
+.card-front .card-wrapper {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -88,11 +89,34 @@
 }
 
 .card-front .card-content {
-    flex-grow: 0;
+    flex-grow: 1;
+    z-index: 1;
+    padding-bottom: 1rem;
 }
 
 .card-content p {
     margin: 0.7rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: row !important;
+}
+
+.photo-us {
+    height: max-content;
+    width: 30vw;
+    filter: grayscale(95%);
+    /* top: 401px; */
+    /* flex-grow: 0; */
+    aspect-ratio: 479 / 253.25;
+    max-width: 30rem;
+    min-width: 11rem;
+}
+
+.photo-container {
+    position: fixed;
+    bottom: -5px;
 }
 
 
