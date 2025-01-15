@@ -38,7 +38,8 @@ main {
 
 body {
   margin: 0;
-
-  background-color: rgb(244, 240, 230);
+  height: 100vh;
+  background: rgb(61,60,70);
+  background: linear-gradient(0deg, rgba(61,60,70,1) 1%, rgba(244,240,230,1) 50%, rgba(244,240,230,1) 63%);
 }
 
